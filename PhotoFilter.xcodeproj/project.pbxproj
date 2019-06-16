@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0268681B22B60481000E662F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0268681A22B60481000E662F /* AppDelegate.swift */; };
-		0268681D22B60481000E662F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0268681C22B60481000E662F /* ViewController.swift */; };
-		0268682022B60481000E662F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0268681E22B60481000E662F /* Main.storyboard */; };
 		0268682222B60482000E662F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0268682122B60482000E662F /* Assets.xcassets */; };
 		0268682522B60482000E662F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0268682322B60482000E662F /* LaunchScreen.storyboard */; };
+		0268683122B604A9000E662F /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0268682C22B604A9000E662F /* FilterCollectionViewCell.swift */; };
+		0268683222B604A9000E662F /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0268682D22B604A9000E662F /* CameraService.swift */; };
+		0268683322B604A9000E662F /* FilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0268682E22B604A9000E662F /* FilterCollectionViewCell.xib */; };
+		0268683422B604A9000E662F /* LivePhotoFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0268682F22B604A9000E662F /* LivePhotoFilterViewController.swift */; };
+		0268683522B604A9000E662F /* LivePhotoFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0268683022B604A9000E662F /* LivePhotoFilter.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0268681722B60481000E662F /* PhotoFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0268681A22B60481000E662F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0268681C22B60481000E662F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0268681F22B60481000E662F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0268682122B60482000E662F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0268682422B60482000E662F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0268682622B60482000E662F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0268682C22B604A9000E662F /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		0268682D22B604A9000E662F /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		0268682E22B604A9000E662F /* FilterCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterCollectionViewCell.xib; sourceTree = "<group>"; };
+		0268682F22B604A9000E662F /* LivePhotoFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivePhotoFilterViewController.swift; sourceTree = "<group>"; };
+		0268683022B604A9000E662F /* LivePhotoFilter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LivePhotoFilter.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				0268681A22B60481000E662F /* AppDelegate.swift */,
-				0268681C22B60481000E662F /* ViewController.swift */,
-				0268681E22B60481000E662F /* Main.storyboard */,
+				0268682D22B604A9000E662F /* CameraService.swift */,
+				0268682C22B604A9000E662F /* FilterCollectionViewCell.swift */,
+				0268682E22B604A9000E662F /* FilterCollectionViewCell.xib */,
+				0268683022B604A9000E662F /* LivePhotoFilter.storyboard */,
+				0268682F22B604A9000E662F /* LivePhotoFilterViewController.swift */,
 				0268682122B60482000E662F /* Assets.xcassets */,
 				0268682322B60482000E662F /* LaunchScreen.storyboard */,
 				0268682622B60482000E662F /* Info.plist */,
@@ -124,7 +133,8 @@
 			files = (
 				0268682522B60482000E662F /* LaunchScreen.storyboard in Resources */,
 				0268682222B60482000E662F /* Assets.xcassets in Resources */,
-				0268682022B60481000E662F /* Main.storyboard in Resources */,
+				0268683322B604A9000E662F /* FilterCollectionViewCell.xib in Resources */,
+				0268683522B604A9000E662F /* LivePhotoFilter.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0268681D22B60481000E662F /* ViewController.swift in Sources */,
+				0268683422B604A9000E662F /* LivePhotoFilterViewController.swift in Sources */,
+				0268683222B604A9000E662F /* CameraService.swift in Sources */,
+				0268683122B604A9000E662F /* FilterCollectionViewCell.swift in Sources */,
 				0268681B22B60481000E662F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0268681E22B60481000E662F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0268681F22B60481000E662F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0268682322B60482000E662F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,7 +287,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6BL3577UC;
 				INFOPLIST_FILE = PhotoFilter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +306,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6BL3577UC;
 				INFOPLIST_FILE = PhotoFilter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
